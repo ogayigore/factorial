@@ -12,6 +12,13 @@
 		41360F06220D92C000F8C581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41360F04220D92C000F8C581 /* Main.storyboard */; };
 		41360F08220D92C500F8C581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41360F07220D92C500F8C581 /* Assets.xcassets */; };
 		41360F0B220D92C500F8C581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41360F09220D92C500F8C581 /* LaunchScreen.storyboard */; };
+		41360F18220DF0A600F8C581 /* PresenterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41360F17220DF0A600F8C581 /* PresenterProtocols.swift */; };
+		41360F1A220DFF3D00F8C581 /* InteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41360F19220DFF3D00F8C581 /* InteractorProtocols.swift */; };
+		41360F1C220DFF9100F8C581 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41360F1B220DFF9100F8C581 /* ViewProtocols.swift */; };
+		41360F1E220E157300F8C581 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41360F1D220E157300F8C581 /* Presenter.swift */; };
+		41360F20220E15D400F8C581 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41360F1F220E15D400F8C581 /* Interactor.swift */; };
+		41360F22220E17F600F8C581 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41360F21220E17F600F8C581 /* Assembly.swift */; };
+		41360F24220E18F700F8C581 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41360F23220E18F700F8C581 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		41360F07220D92C500F8C581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41360F0A220D92C500F8C581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41360F0C220D92C500F8C581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41360F17220DF0A600F8C581 /* PresenterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocols.swift; sourceTree = "<group>"; };
+		41360F19220DFF3D00F8C581 /* InteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorProtocols.swift; sourceTree = "<group>"; };
+		41360F1B220DFF9100F8C581 /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		41360F1D220E157300F8C581 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		41360F1F220E15D400F8C581 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		41360F21220E17F600F8C581 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		41360F23220E18F700F8C581 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,61 @@
 		41360EFF220D92C000F8C581 /* factorial viper protocols */ = {
 			isa = PBXGroup;
 			children = (
-				41360F00220D92C000F8C581 /* AppDelegate.swift */,
-				41360F02220D92C000F8C581 /* ViewController.swift */,
+				41360F16220DEE8300F8C581 /* Assembly */,
+				41360F15220DEE7500F8C581 /* App */,
+				41360F12220DEE5000F8C581 /* View */,
+				41360F13220DEE6300F8C581 /* Presenter */,
+				41360F14220DEE6C00F8C581 /* Interactor */,
 				41360F04220D92C000F8C581 /* Main.storyboard */,
 				41360F07220D92C500F8C581 /* Assets.xcassets */,
 				41360F09220D92C500F8C581 /* LaunchScreen.storyboard */,
 				41360F0C220D92C500F8C581 /* Info.plist */,
 			);
 			path = "factorial viper protocols";
+			sourceTree = "<group>";
+		};
+		41360F12220DEE5000F8C581 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41360F02220D92C000F8C581 /* ViewController.swift */,
+				41360F1B220DFF9100F8C581 /* ViewProtocols.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41360F13220DEE6300F8C581 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				41360F17220DF0A600F8C581 /* PresenterProtocols.swift */,
+				41360F1D220E157300F8C581 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41360F14220DEE6C00F8C581 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				41360F19220DFF3D00F8C581 /* InteractorProtocols.swift */,
+				41360F1F220E15D400F8C581 /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41360F15220DEE7500F8C581 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41360F00220D92C000F8C581 /* AppDelegate.swift */,
+				41360F23220E18F700F8C581 /* App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		41360F16220DEE8300F8C581 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				41360F21220E17F600F8C581 /* Assembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41360F24220E18F700F8C581 /* App.swift in Sources */,
+				41360F1E220E157300F8C581 /* Presenter.swift in Sources */,
+				41360F22220E17F600F8C581 /* Assembly.swift in Sources */,
+				41360F1A220DFF3D00F8C581 /* InteractorProtocols.swift in Sources */,
 				41360F03220D92C000F8C581 /* ViewController.swift in Sources */,
+				41360F1C220DFF9100F8C581 /* ViewProtocols.swift in Sources */,
+				41360F18220DF0A600F8C581 /* PresenterProtocols.swift in Sources */,
+				41360F20220E15D400F8C581 /* Interactor.swift in Sources */,
 				41360F01220D92C000F8C581 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R82428TV8S;
 				INFOPLIST_FILE = "factorial viper protocols/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R82428TV8S;
 				INFOPLIST_FILE = "factorial viper protocols/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
